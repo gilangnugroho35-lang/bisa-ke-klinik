@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b5b68">
+<title>BISA KE KLINIK | Belajar Mandiri</title>
+<style>
+:root{--navy:#143b56;--teal:#087e8b;--mint:#dff6ef;--yellow:#ffd166;--coral:#f28c78;--paper:#f5fafb;--ink:#193246;--muted:#557080;--white:#fff;--line:#d8e6eb;--green:#237a57;--red:#a83d37}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}button{font:inherit;cursor:pointer}button:focus-visible,[tabindex]:focus-visible{outline:3px solid #ed9e00;outline-offset:3px}.topbar{background:var(--navy);color:#fff;padding:14px max(16px,calc((100% - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:900;letter-spacing:.4px;font-size:1.12rem}.brand small{display:block;font-size:.72rem;font-weight:600;opacity:.85;letter-spacing:0}.top-chip{background:#ffffff20;border:1px solid #ffffff40;border-radius:99px;padding:6px 10px;font-size:.78rem}.wrap{max-width:1120px;margin:auto;padding:18px}.hero{background:linear-gradient(125deg,#dff6ef,#fff0c5);border:1px solid #cfe8df;border-radius:24px;padding:clamp(18px,4vw,36px);display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:18px;margin:8px 0 18px}.eyebrow{font-size:.78rem;font-weight:900;letter-spacing:1.3px;color:var(--teal);text-transform:uppercase}.hero h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.03;margin:8px 0 14px;color:var(--navy)}.hero p{font-size:1.05rem;max-width:590px;margin:0 0 18px}.hero-art{width:100%;max-width:370px;justify-self:center}.btn{border:0;border-radius:13px;padding:12px 16px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;transition:transform .15s,filter .15s}.btn:hover{filter:brightness(.97);transform:translateY(-1px)}.primary{background:var(--teal);color:#fff}.yellow{background:var(--yellow);color:#273746}.light{background:#e8f4f6;color:var(--navy);border:1px solid var(--line)}.nav{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:14px 0 22px}.nav button{border:1px solid var(--line);background:#fff;border-radius:14px;padding:11px 6px;font-weight:800;color:var(--navy);min-height:72px}.nav button .emoji{font-size:1.45rem;display:block;margin-bottom:3px}.nav button[aria-current=true]{background:var(--navy);color:#fff;border-color:var(--navy)}.section{display:none}.section.active{display:block;animation:fade .2s ease}@keyframes fade{from{opacity:.45;transform:translateY(4px)}to{opacity:1;transform:none}}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:10px 0 16px}.section-head h2{margin:3px 0;color:var(--navy);font-size:clamp(1.5rem,3vw,2rem)}.section-head p{margin:0;color:var(--muted)}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 5px 20px #173b5609}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.step-card{display:flex;gap:14px;align-items:flex-start}.step-num{width:42px;height:42px;flex:0 0 42px;background:var(--yellow);border-radius:14px;display:grid;place-items:center;font-size:1.25rem;font-weight:900}.step-card h3,.card h3{margin:0 0 6px;color:var(--navy)}.step-card p,.card p{margin:0;color:var(--muted)}.mini{font-size:.85rem;color:var(--muted)}.progress{height:10px;background:#e3edf0;border-radius:99px;overflow:hidden;margin:14px 0}.progress>div{height:100%;width:0;background:var(--teal);transition:width .2s}.body-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.body-choice{border:2px solid var(--line);background:#fff;border-radius:18px;padding:14px 8px;text-align:center;color:var(--navy);font-weight:800;min-height:132px}.body-choice .emoji{display:block;font-size:2.5rem;margin-bottom:4px}.body-choice[aria-pressed=true]{border-color:var(--teal);background:var(--mint);box-shadow:0 0 0 2px #087e8b18}.feedback{border-radius:14px;padding:14px;margin-top:14px;background:#edf7f4;border:1px solid #cce9de}.feedback strong{display:block;margin-bottom:4px}.scenario{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center}.scene-art{background:#e2f4f1;border-radius:18px;padding:12px}.scene-art svg{width:100%;height:auto;display:block}.choices{display:grid;gap:9px;margin-top:14px}.choice-btn{border:2px solid var(--line);background:#fff;border-radius:13px;text-align:left;padding:13px;font-weight:700;color:var(--ink)}.choice-btn:hover{border-color:var(--teal)}.choice-btn.correct{border-color:var(--green);background:#e8f8ef}.choice-btn.wrong{border-color:var(--red);background:#fff0ed}.quiz-q{font-size:1.18rem;font-weight:850;color:var(--navy);margin:0 0 12px}.quiz-score{font-size:1.4rem;font-weight:900;color:var(--teal)}.footer{padding:24px 12px;text-align:center;color:var(--muted);font-size:.85rem}.pill{display:inline-block;border-radius:99px;background:#e6f5f4;color:#096a73;padding:5px 10px;font-size:.78rem;font-weight:800}.notice{background:#fff7df;border:1px solid #f4df9d;border-radius:14px;padding:13px;color:#604b16}.hidden{display:none!important}.row-between{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.big-emoji{font-size:2.5rem}.hero-actions{display:flex;gap:9px;flex-wrap:wrap}.smallcaps{font-size:.75rem;letter-spacing:1px;font-weight:900;color:var(--teal)}.completion{border-radius:18px;background:var(--navy);color:#fff;padding:20px;margin-top:16px}.completion p{color:#dcebf2}.completion .btn{margin-top:8px}
+@media(max-width:720px){.hero{grid-template-columns:1fr}.hero-art{max-width:260px;grid-row:1}.hero-copy{grid-row:2}.nav{grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}.nav button{font-size:.72rem;padding:8px 2px;min-height:67px}.nav button .emoji{font-size:1.25rem}.grid2,.grid3{grid-template-columns:1fr}.body-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.scenario{grid-template-columns:1fr}.scene-art{max-width:170px;margin:auto;width:100%}.section-head{align-items:flex-start;flex-direction:column}.wrap{padding:12px}.card{padding:15px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">🏥 BISA KE KLINIK <small>Belajar Inklusif, Simulatif, dan Aplikatif</small></div>
+  <div class="top-chip">Media belajar tunarungu</div>
+</header>
+<main class="wrap">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <div class="eyebrow">Aku berani, aku bisa!</div>
+      <h1 id="hero-title">Ayo Belajar<br>Ke Klinik!</h1>
+      <p>Kenali langkah berobat, tunjukkan bagian tubuh yang sakit, dan berlatih berkomunikasi dengan petugas.</p>
+      <div class="hero-actions"><button class="btn primary" onclick="showSection('panduan')">🚶 Mulai belajar</button><button class="btn yellow" onclick="showSection('latihan')">⭐ Ayo bermain</button></div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 340 270" role="img" aria-label="Ilustrasi kartun siswa dan petugas kesehatan di klinik">
+      <ellipse cx="170" cy="242" rx="130" ry="15" fill="#b9ded6"/>
+      <rect x="40" y="54" width="260" height="169" rx="24" fill="#fff" stroke="#b6d9d1" stroke-width="3"/>
+      <rect x="65" y="76" width="210" height="42" rx="12" fill="#dff6ef"/>
+      <text x="170" y="103" text-anchor="middle" font-size="20" font-weight="bold" fill="#143b56">KLINIK SEHAT</text>
+      <rect x="60" y="140" width="94" height="67" rx="9" fill="#e8f4f6"/>
+      <rect x="72" y="151" width="70" height="44" rx="6" fill="#b9e5dd"/>
+      <path d="M107 158v30M92 173h30" stroke="#087e8b" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="215" cy="142" r="27" fill="#e8b38e"/>
+      <path d="M188 139q2-34 30-28q23 5 23 30l-12-13-32 5z" fill="#3a2d2a"/>
+      <path d="M181 214v-35q0-20 34-20q35 0 35 20v35" fill="#fff" stroke="#087e8b" stroke-width="3"/>
+      <path d="M215 165v28m-10-14h20" stroke="#f28c78" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="123" cy="169" r="18" fill="#c98763"/><path d="M105 166q1-24 20-22q19 1 17 21l-12-8-20 6z" fill="#25394a"/>
+      <path d="M96 221v-26q0-16 27-16q27 0 27 16v26" fill="#ffd166" stroke="#e7b64f" stroke-width="2"/>
+      <path d="M112 190l11 14 12-14" fill="none" stroke="#fff" stroke-width="4"/>
+      <circle cx="120" cy="169" r="2" fill="#193246"/><circle cx="132" cy="169" r="2" fill="#193246"/><path d="M120 177q6 6 12 0" fill="none" stroke="#8b4d42" stroke-width="2"/>
+      <circle cx="210" cy="142" r="2" fill="#193246"/><circle cx="222" cy="142" r="2" fill="#193246"/><path d="M210 151q7 6 14 0" fill="none" stroke="#8b4d42" stroke-width="2"/>
+      <path d="M58 40l7 14 14 7-14 7-7 14-7-14-14-7 14-7z" fill="#ffd166"/><circle cx="288" cy="35" r="8" fill="#f28c78"/>
+    </svg>
+  </section>
+
+  <nav class="nav" aria-label="Menu pembelajaran">
+    <button data-section="beranda" aria-current="true" onclick="showSection('beranda')"><span class="emoji">🏠</span>Beranda</button>
+    <button data-section="panduan" aria-current="false" onclick="showSection('panduan')"><span class="emoji">👣</span>Langkah</button>
+    <button data-section="keluhan" aria-current="false" onclick="showSection('keluhan')"><span class="emoji">🧍</span>Keluhanku</button>
+    <button data-section="simulasi" aria-current="false" onclick="showSection('simulasi')"><span class="emoji">💬</span>Simulasi</button>
+    <button data-section="latihan" aria-current="false" onclick="showSection('latihan')"><span class="emoji">⭐</span>Kuis</button>
+  </nav>
+
+  <section id="beranda" class="section active">
+    <div class="section-head"><div><div class="smallcaps">SELAMAT DATANG</div><h2>Aku siap belajar!</h2><p>Pilih kegiatan yang ingin kamu coba.</p></div><span class="pill">Belajar sambil mencoba</span></div>
+    <div class="grid3">
+      <article class="card"><div class="big-emoji">👣</div><h3>1. Kenali langkahnya</h3><p>Belajar urutan saat datang ke klinik.</p><p style="margin-top:13px"><button class="btn light" onclick="showSection('panduan')">Lihat langkah →</button></p></article>
+      <article class="card"><div class="big-emoji">🩹</div><h3>2. Ceritakan keluhan</h3><p>Pilih bagian tubuh yang terasa sakit.</p><p style="margin-top:13px"><button class="btn light" onclick="showSection('keluhan')">Pilih tubuh →</button></p></article>
+      <article class="card"><div class="big-emoji">🎯</div><h3>3. Coba misi</h3><p>Latihan memilih tindakan dan jawaban.</p><p style="margin-top:13px"><button class="btn light" onclick="showSection('simulasi')">Mulai simulasi →</button></p></article>
+    </div>
+    <div class="notice" style="margin-top:16px"><strong>Ingat!</strong> Kamu boleh meminta petugas mengulang atau menjelaskan dengan cara yang kamu pahami. Jika perlu, gunakan tulisan, gambar, gestur, atau bantuan pendamping.</div>
+  </section>
+
+  <section id="panduan" class="section">
+    <div class="section-head"><div><div class="smallcaps">PANDUAN VISUAL</div><h2>6 Langkah ke Klinik</h2><p>Tekan tombol untuk melihat setiap langkah.</p></div><span class="pill" id="step-count">Langkah 1 dari 6</span></div>
+    <div class="card">
+      <div class="row-between"><span class="pill" id="step-label">LANGKAH 1</span><span class="mini">Ikuti urutannya</span></div>
+      <div class="progress"><div id="step-progress" style="width:16.66%"></div></div>
+      <div class="scenario">
+        <div class="scene-art" id="step-art"></div>
+        <div><h3 id="step-title" style="font-size:1.55rem;margin:0 0 8px">Datang ke klinik</h3><p id="step-desc">Datang bersama orang tua atau pendamping jika diperlukan.</p><div class="feedback" id="step-tip"><strong>Yang perlu diingat</strong> Perhatikan petunjuk di sekitar klinik.</div></div>
+      </div>
+      <div class="row-between" style="margin-top:18px"><button class="btn light" id="prev-step" onclick="moveStep(-1)" disabled>← Sebelumnya</button><button class="btn primary" id="next-step" onclick="moveStep(1)">Langkah berikutnya →</button></div>
+    </div>
+    <div class="notice" style="margin-top:14px">Urutan layanan dapat berbeda di setiap fasilitas kesehatan. Ikuti arahan petugas di tempat kamu berobat.</div>
+  </section>
+
+  <section id="keluhan" class="section">
+    <div class="section-head"><div><div class="smallcaps">KENALI DIRI</div><h2>Bagian tubuh mana yang sakit?</h2><p>Pilih gambar yang sesuai. Kamu bisa memilih lebih dari satu bagian.</p></div><span class="pill">Pilih gambar</span></div>
+    <div class="body-grid" id="body-grid"></div>
+    <div class="card" style="margin-top:15px">
+      <div class="row-between"><div><h3>Keluhanku</h3><p class="mini">Contoh pesan yang dapat kamu tunjukkan kepada petugas.</p></div><span class="big-emoji">🗣️</span></div>
+      <div id="complaint-output" class="feedback" aria-live="polite"><strong>Belum memilih bagian tubuh</strong>Pilih satu gambar di atas.</div>
+      <div class="row-between" style="margin-top:12px"><button class="btn light" onclick="clearBody()">Hapus pilihan</button><button class="btn primary" onclick="copyComplaint()">📋 Salin pesan</button></div>
+      <p class="mini" id="copy-status" aria-live="polite" style="margin-top:8px"></p>
+    </div>
+    <div class="notice" style="margin-top:14px">Pilih gambar untuk membantu menjelaskan keluhan. Gambar ini tidak digunakan untuk menentukan diagnosis atau obat.</div>
+  </section>
+
+  <section id="simulasi" class="section">
+    <div class="section-head"><div><div class="smallcaps">LATIHAN KEHIDUPAN NYATA</div><h2>Ayo, coba situasinya!</h2><p>Baca situasi, lalu pilih tindakan yang paling tepat.</p></div><span class="pill" id="scenario-count">Misi 1 dari 3</span></div>
+    <div class="card">
+      <div class="scenario"><div class="scene-art" id="scenario-art"></div><div><span class="pill" id="scenario-tag">MISI 1</span><h3 id="scenario-title" style="font-size:1.4rem;margin-top:10px">Kamu baru tiba</h3><p id="scenario-text">Kamu tiba di klinik dan ingin mendapatkan pelayanan.</p></div></div>
+      <div class="choices" id="scenario-choices"></div>
+      <div id="scenario-feedback" class="feedback hidden" aria-live="polite"></div>
+      <div class="row-between" style="margin-top:16px"><span class="mini" id="scenario-score">Jawaban tepat: 0</span><button class="btn primary" id="next-scenario" onclick="nextScenario()" disabled>Misi berikutnya →</button></div>
+    </div>
+  </section>
+
+  <section id="latihan" class="section">
+    <div class="section-head"><div><div class="smallcaps">CEK PEMAHAMAN</div><h2>Kuis BISA KE KLINIK</h2><p>Pilih jawaban, lalu baca umpan baliknya.</p></div><span class="pill" id="quiz-count">Soal 1 dari 5</span></div>
+    <div class="card" id="quiz-card">
+      <div class="row-between"><span class="pill">⭐ Ayo berpikir</span><span class="mini" id="quiz-progress-label">0 jawaban</span></div>
+      <div class="progress"><div id="quiz-progress"></div></div>
+      <p class="quiz-q" id="quiz-question"></p>
+      <div class="choices" id="quiz-options"></div>
+      <div id="quiz-feedback" class="feedback hidden" aria-live="polite"></div>
+      <div class="row-between" style="margin-top:16px"><span class="mini" id="quiz-score">Skor: 0</span><button class="btn primary" id="next-question" onclick="nextQuestion()" disabled>Soal berikutnya →</button></div>
+    </div>
+    <div id="quiz-result" class="completion hidden" aria-live="polite"></div>
+  </section>
+  <footer class="footer">BISA KE KLINIK · Belajar mandiri, berlatih dengan aman, dan berani menyampaikan kebutuhan.<br>Media pembelajaran, bukan pengganti pemeriksaan tenaga kesehatan.</footer>
+</main>
+<script>
+const svgArt=(kind)=>{const common='viewBox="0 0 160 150" role="img" aria-label="Ilustrasi kartun"';const art={
+clinic:`<svg ${common}><rect x="18" y="22" width="124" height="112" rx="15" fill="#fff" stroke="#9bcfc3" stroke-width="3"/><rect x="47" y="9" width="66" height="22" rx="6" fill="#087e8b"/><path d="M80 13v14M73 20h14" stroke="#fff" stroke-width="4" stroke-linecap="round"/><rect x="33" y="45" width="94" height="14" rx="5" fill="#dff6ef"/><path d="M80 72v22m-11-11h22" stroke="#f28c78" stroke-width="8" stroke-linecap="round"/><rect x="43" y="106" width="74" height="19" rx="5" fill="#ffd166"/></svg>`,
+register:`<svg ${common}><rect x="16" y="80" width="128" height="48" rx="7" fill="#c9e7e1"/><rect x="25" y="67" width="110" height="18" rx="5" fill="#087e8b"/><circle cx="80" cy="38" r="20" fill="#dba17c"/><path d="M59 35q2-27 22-23q19 2 20 25l-12-8-27 7z" fill="#3b2b28"/><path d="M51 66q3-13 29-13q27 0 29 13" fill="#ffd166"/><rect x="90" y="92" width="34" height="22" rx="3" fill="#fff"/><path d="M96 99h22m-22 6h15" stroke="#087e8b" stroke-width="2"/></svg>`,
+wait:`<svg ${common}><rect x="18" y="85" width="124" height="16" rx="6" fill="#087e8b"/><path d="M27 101v24m106-24v24" stroke="#143b56" stroke-width="5"/><circle cx="79" cy="37" r="17" fill="#dba17c"/><path d="M61 36q0-25 20-22q17 2 17 23l-12-7-24 5z" fill="#3b2b28"/><path d="M52 82V64q0-14 27-14q26 0 26 14v18" fill="#ffd166"/><path d="M69 58l10 11 10-11" fill="none" stroke="#fff" stroke-width="4"/><circle cx="124" cy="39" r="16" fill="#dff6ef"/><path d="M124 29v11l8 5" stroke="#087e8b" stroke-width="3" fill="none" stroke-linecap="round"/></svg>`,
+doctor:`<svg ${common}><circle cx="80" cy="36" r="22" fill="#dba17c"/><path d="M57 35q1-27 24-25q22 1 23 27l-13-9-29 7z" fill="#3b2b28"/><path d="M42 131V77q0-22 38-22q39 0 39 22v54" fill="#fff" stroke="#9bcfc3" stroke-width="3"/><path d="M80 66v28m-11-14h22" stroke="#f28c78" stroke-width="7" stroke-linecap="round"/><rect x="20" y="102" width="28" height="6" rx="3" fill="#087e8b"/><circle cx="128" cy="91" r="18" fill="#dff6ef"/><path d="M121 91l5 5 10-12" stroke="#087e8b" stroke-width="4" fill="none" stroke-linecap="round"/></svg>`,
+medicine:`<svg ${common}><rect x="37" y="27" width="86" height="98" rx="13" fill="#fff" stroke="#9bcfc3" stroke-width="3"/><rect x="48" y="15" width="64" height="21" rx="5" fill="#087e8b"/><rect x="48" y="56" width="64" height="47" rx="7" fill="#dff6ef"/><path d="M80 64v31m-15-15h30" stroke="#f28c78" stroke-width="8" stroke-linecap="round"/><path d="M18 51l8 8 14-17" stroke="#ffd166" stroke-width="6" fill="none" stroke-linecap="round"/></svg>`,
+home:`<svg ${common}><path d="M18 70L80 20l62 50" fill="#f28c78" stroke="#b85c50" stroke-width="3" stroke-linejoin="round"/><rect x="31" y="66" width="98" height="65" rx="5" fill="#ffd166"/><rect x="68" y="91" width="25" height="40" rx="4" fill="#fff"/><rect x="42" y="79" width="20" height="20" rx="3" fill="#dff6ef"/><rect x="99" y="79" width="20" height="20" rx="3" fill="#dff6ef"/><path d="M52 80v18m-9-9h18M109 80v18m-9-9h18" stroke="#087e8b" stroke-width="2"/></svg>`,
+person:`<svg ${common}><circle cx="80" cy="33" r="24" fill="#dba17c"/><path d="M55 32q0-29 27-25q22 2 22 30l-14-10-30 8z" fill="#3b2b28"/><path d="M36 135V89q0-26 44-26q45 0 45 26v46" fill="#ffd166" stroke="#e4b34c" stroke-width="3"/><circle cx="72" cy="34" r="2.5" fill="#193246"/><circle cx="88" cy="34" r="2.5" fill="#193246"/><path d="M72 44q8 7 16 0" stroke="#8b4d42" stroke-width="2" fill="none"/></svg>`
+};return art[kind]||art.clinic};
+const steps=[
+{title:"Datang ke klinik",desc:"Datang ke klinik. Jika perlu, datang bersama orang tua atau pendamping.",tip:"Perhatikan papan petunjuk dan pintu masuk.",art:"clinic"},
+{title:"Daftar di loket",desc:"Sampaikan bahwa kamu ingin berobat. Siapkan kartu identitas atau kartu berobat jika diminta.",tip:"Kamu bisa menggunakan tulisan, gestur, atau bantuan pendamping.",art:"register"},
+{title:"Menunggu giliran",desc:"Duduk di tempat tunggu. Perhatikan nomor antrean atau panggilan petugas.",tip:"Jika tidak mendengar panggilan, beri tahu petugas bahwa kamu tunarungu dan tanyakan cara mengetahui giliran.",art:"wait"},
+{title:"Bertemu petugas kesehatan",desc:"Saat dipanggil, ikuti petunjuk petugas menuju ruang pemeriksaan.",tip:"Jika belum memahami arahan, minta petugas menunjukkan atau menuliskannya.",art:"doctor"},
+{title:"Sampaikan keluhan",desc:"Tunjukkan bagian tubuh yang sakit dan jelaskan keluhan yang kamu rasakan.",tip:"Katakan atau tunjukkan sejak kapan keluhan terasa dan hal lain yang ditanyakan petugas.",art:"person"},
+{title:"Pahami petunjuk berikutnya",desc:"Perhatikan penjelasan petugas tentang langkah berikutnya, obat, atau jadwal kontrol jika ada.",tip:"Minta penjelasan ulang jika belum paham. Jangan menebak aturan minum obat.",art:"medicine"}
+];
+let stepIndex=0;
+function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===id));document.querySelectorAll('.nav button').forEach(b=>b.setAttribute('aria-current',String(b.dataset.section===id)));window.scrollTo({top:document.querySelector('.nav').offsetTop-8,behavior:'smooth'});}
+function renderStep(){const s=steps[stepIndex];document.getElementById('step-count').textContent=`Langkah ${stepIndex+1} dari ${steps.length}`;document.getElementById('step-label').textContent=`LANGKAH ${stepIndex+1}`;document.getElementById('step-title').textContent=s.title;document.getElementById('step-desc').textContent=s.desc;document.getElementById('step-tip').innerHTML='<strong>Yang perlu diingat</strong>'+s.tip;document.getElementById('step-art').innerHTML=svgArt(s.art);document.getElementById('step-progress').style.width=((stepIndex+1)/steps.length*100)+'%';document.getElementById('prev-step').disabled=stepIndex===0;document.getElementById('next-step').textContent=stepIndex===steps.length-1?'Ulangi dari awal ↻':'Langkah berikutnya →';}
+function moveStep(d){stepIndex+=d;if(stepIndex>=steps.length)stepIndex=0;if(stepIndex<0)stepIndex=0;renderStep()}
+const bodyParts=[{id:'kepala',emoji:'🤕',name:'Kepala',line:'Kepala saya terasa sakit.'},{id:'telinga',emoji:'👂',name:'Telinga',line:'Telinga saya terasa sakit.'},{id:'mata',emoji:'👁️',name:'Mata',line:'Mata saya terasa sakit atau tidak nyaman.'},{id:'gigi',emoji:'🦷',name:'Gigi',line:'Gigi saya terasa sakit.'},{id:'perut',emoji:'🤢',name:'Perut',line:'Perut saya terasa sakit atau tidak nyaman.'},{id:'tenggorokan',emoji:'😷',name:'Tenggorokan',line:'Tenggorokan saya terasa sakit.'},{id:'tangan',emoji:'✋',name:'Tangan',line:'Tangan saya terasa sakit.'},{id:'kaki',emoji:'🦶',name:'Kaki',line:'Kaki saya terasa sakit.'},{id:'lain',emoji:'🩹',name:'Bagian lain',line:'Saya merasa tidak nyaman di bagian tubuh lain.'}];
+let selectedBody=[];
+function renderBody(){const g=document.getElementById('body-grid');g.innerHTML='';bodyParts.forEach(p=>{const b=document.createElement('button');b.className='body-choice';b.setAttribute('aria-pressed',String(selectedBody.includes(p.id)));b.innerHTML=`<span class="emoji" aria-hidden="true">${p.emoji}</span>${p.name}`;b.onclick=()=>{selectedBody=selectedBody.includes(p.id)?selectedBody.filter(x=>x!==p.id):[...selectedBody,p.id];renderBody();renderComplaint()};g.appendChild(b)});renderComplaint()}
+function renderComplaint(){const out=document.getElementById('complaint-output');if(!selectedBody.length){out.innerHTML='<strong>Belum memilih bagian tubuh</strong>Pilih satu gambar di atas.';return}const lines=selectedBody.map(id=>bodyParts.find(p=>p.id===id).line);out.innerHTML='<strong>Saya ingin menyampaikan keluhan:</strong>'+lines.map(x=>'• '+x).join('<br>')+'<br>Jika ditanya, saya akan mencoba menjelaskan kapan keluhan mulai terasa.'}
+function clearBody(){selectedBody=[];renderBody();document.getElementById('copy-status').textContent='Pilihan dihapus.'}
+function copyComplaint(){const lines=selectedBody.map(id=>bodyParts.find(p=>p.id===id).line);const text=lines.length?'Saya ingin menyampaikan keluhan:\n'+lines.join('\n')+'\nSaya akan mencoba menjelaskan kapan keluhan mulai terasa.':'Saya ingin menyampaikan keluhan, tetapi belum memilih bagian tubuh.';if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(()=>document.getElementById('copy-status').textContent='Pesan berhasil disalin.').catch(()=>fallbackCopy(text))}else fallbackCopy(text)}
+function fallbackCopy(text){const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');document.getElementById('copy-status').textContent='Pesan disalin.'}catch(e){document.getElementById('copy-status').textContent=text}ta.remove()}
+const scenarios=[
+{tag:'MISI 1',title:'Kamu baru tiba',text:'Kamu tiba di klinik dan ingin mendapatkan pelayanan. Apa yang sebaiknya kamu lakukan?',art:'clinic',choices:[{text:'Langsung masuk ke ruang pemeriksaan tanpa bertanya',ok:false,why:'Biasanya kamu perlu mengikuti alur layanan dan arahan petugas terlebih dahulu.'},{text:'Cari loket pendaftaran atau tanyakan kepada petugas',ok:true,why:'Pendaftaran atau bertanya kepada petugas membantu kamu mengetahui alur layanan di tempat tersebut.'},{text:'Pulang karena belum tahu tempatnya',ok:false,why:'Kamu bisa meminta bantuan petugas atau pendamping untuk menemukan tempat pendaftaran.'}]},
+{tag:'MISI 2',title:'Kamu sulit memahami panggilan',text:'Kamu tunarungu dan sedang menunggu. Kamu tidak tahu apakah giliranmu sudah tiba. Apa yang bisa kamu lakukan?',art:'wait',choices:[{text:'Diam dan pulang tanpa bertanya',ok:false,why:'Kamu berhak mencari cara agar informasi giliran dapat dipahami.'},{text:'Tanyakan cara mengetahui giliran dengan tulisan atau gestur',ok:true,why:'Menanyakan cara mengetahui giliran membantu petugas menyesuaikan komunikasi.'},{text:'Mengikuti pasien lain tanpa memastikan',ok:false,why:'Lebih aman memastikan informasi giliran kepada petugas.'}]},
+{tag:'MISI 3',title:'Petugas bertanya tentang keluhan',text:'Petugas ingin tahu bagian tubuh yang sakit. Kamu kesulitan menjelaskan dengan kata-kata. Apa yang bisa kamu lakukan?',art:'doctor',choices:[{text:'Menunjuk bagian tubuh dan menggunakan gestur atau tulisan',ok:true,why:'Menunjuk, gestur, dan tulisan dapat membantu menjelaskan keluhan. Minta bantuan komunikasi jika diperlukan.'},{text:'Menebak nama penyakit sendiri',ok:false,why:'Sampaikan gejala yang kamu rasakan; diagnosis dilakukan oleh tenaga kesehatan.'},{text:'Tidak memberi informasi apa pun',ok:false,why:'Informasi tentang keluhan membantu petugas memahami kebutuhanmu.'}]}
+];let scenarioIndex=0,scenarioScore=0,scenarioAnswered=false;
+function renderScenario(){const s=scenarios[scenarioIndex];document.getElementById('scenario-count').textContent=`Misi ${scenarioIndex+1} dari ${scenarios.length}`;document.getElementById('scenario-tag').textContent=s.tag;document.getElementById('scenario-title').textContent=s.title;document.getElementById('scenario-text').textContent=s.text;document.getElementById('scenario-art').innerHTML=svgArt(s.art);document.getElementById('scenario-feedback').classList.add('hidden');document.getElementById('next-scenario').disabled=true;document.getElementById('next-scenario').textContent=scenarioIndex===scenarios.length-1?'Lihat hasil misi →':'Misi berikutnya →';scenarioAnswered=false;const box=document.getElementById('scenario-choices');box.innerHTML='';s.choices.forEach((c,i)=>{const b=document.createElement('button');b.className='choice-btn';b.textContent=c.text;b.onclick=()=>answerScenario(i);box.appendChild(b)});document.getElementById('scenario-score').textContent=`Jawaban tepat: ${scenarioScore}`;}
+function answerScenario(i){if(scenarioAnswered)return;scenarioAnswered=true;const s=scenarios[scenarioIndex],c=s.choices[i];if(c.ok)scenarioScore++;[...document.querySelectorAll('#scenario-choices button')].forEach((b,j)=>{b.disabled=true;if(s.choices[j].ok)b.classList.add('correct');if(j===i&&!c.ok)b.classList.add('wrong')});const f=document.getElementById('scenario-feedback');f.classList.remove('hidden');f.innerHTML=`<strong>${c.ok?'🌟 Bagus!':'💡 Ayo belajar lagi.'}</strong>${c.why}`;document.getElementById('next-scenario').disabled=false;document.getElementById('scenario-score').textContent=`Jawaban tepat: ${scenarioScore}`;}
+function nextScenario(){if(!scenarioAnswered)return;if(scenarioIndex<scenarios.length-1){scenarioIndex++;renderScenario()}else{document.getElementById('scenario-feedback').innerHTML=`<strong>Misi selesai!</strong>Kamu menjawab tepat ${scenarioScore} dari ${scenarios.length} misi. Coba ulangi untuk berlatih lagi.`;document.getElementById('scenario-feedback').classList.remove('hidden');document.getElementById('next-scenario').textContent='Ulangi misi ↻';document.getElementById('next-scenario').onclick=()=>{scenarioIndex=0;scenarioScore=0;document.getElementById('next-scenario').onclick=nextScenario;renderScenario()};}}
+const questions=[
+{q:'Saat pertama tiba di klinik, apa yang sebaiknya kamu cari atau tanyakan?',opts:['Loket pendaftaran atau petugas','Ruang penyimpanan obat saja','Pintu keluar saja'],a:0,why:'Loket pendaftaran atau petugas dapat membantu menunjukkan alur layanan.'},
+{q:'Kamu tidak memahami arahan petugas. Apa yang dapat kamu lakukan?',opts:['Menebak maksudnya','Meminta petugas mengulang atau menunjukkan arahan','Langsung pergi'],a:1,why:'Meminta pengulangan, tulisan, atau contoh gerakan membantu memastikan arahan dipahami.'},
+{q:'Bagaimana cara membantu petugas memahami bagian tubuh yang sakit?',opts:['Menunjuk bagian tubuh dan menjelaskan keluhan','Mengatakan tidak ada keluhan padahal sakit','Menebak nama penyakit'],a:0,why:'Menunjuk bagian tubuh dan menjelaskan gejala membantu petugas memahami keluhan.'},
+{q:'Jika kamu tidak mendengar panggilan antrean, apa yang bisa dilakukan?',opts:['Pulang tanpa memberi tahu siapa pun','Tanyakan cara mengetahui giliran kepada petugas','Masuk ke ruang mana saja'],a:1,why:'Kamu dapat meminta cara komunikasi yang sesuai, misalnya nomor antrean, tulisan, atau isyarat visual.'},
+{q:'Setelah diperiksa, kamu belum memahami petunjuk tentang obat. Apa yang tepat?',opts:['Menebak cara minum obat','Mengikuti teman tanpa bertanya','Meminta petugas menjelaskan kembali'],a:2,why:'Jangan menebak aturan obat. Minta penjelasan ulang sampai kamu memahami petunjuknya.'}
+];let quizIndex=0,quizScore=0,quizAnswered=0,quizDone=false;
+function renderQuestion(){const q=questions[quizIndex];document.getElementById('quiz-count').textContent=`Soal ${quizIndex+1} dari ${questions.length}`;document.getElementById('quiz-question').textContent=q.q;document.getElementById('quiz-progress').style.width=(quizIndex/questions.length*100)+'%';document.getElementById('quiz-progress-label').textContent=`${quizAnswered} jawaban`;document.getElementById('quiz-score').textContent=`Skor: ${quizScore}`;document.getElementById('quiz-feedback').classList.add('hidden');document.getElementById('next-question').disabled=true;document.getElementById('next-question').textContent=quizIndex===questions.length-1?'Lihat hasil →':'Soal berikutnya →';const box=document.getElementById('quiz-options');box.innerHTML='';q.opts.forEach((o,i)=>{const b=document.createElement('button');b.className='choice-btn';b.textContent=o;b.onclick=()=>answerQuestion(i);box.appendChild(b)});document.getElementById('quiz-card').classList.remove('hidden');document.getElementById('quiz-result').classList.add('hidden')}
+function answerQuestion(i){if(quizDone||document.getElementById('next-question').disabled===false)return;const q=questions[quizIndex],correct=i===q.a;if(correct)quizScore++;quizAnswered++;[...document.querySelectorAll('#quiz-options button')].forEach((b,j)=>{b.disabled=true;if(j===q.a)b.classList.add('correct');if(j===i&&!correct)b.classList.add('wrong')});const f=document.getElementById('quiz-feedback');f.classList.remove('hidden');f.innerHTML=`<strong>${correct?'🌟 Jawaban tepat!':'💡 Belum tepat, ayo ingat lagi.'}</strong>${q.why}`;document.getElementById('quiz-score').textContent=`Skor: ${quizScore}`;document.getElementById('quiz-progress-label').textContent=`${quizAnswered} jawaban`;document.getElementById('next-question').disabled=false}
+function nextQuestion(){if(quizIndex<questions.length-1){quizIndex++;renderQuestion()}else{quizDone=true;document.getElementById('quiz-card').classList.add('hidden');const r=document.getElementById('quiz-result');r.classList.remove('hidden');const pct=Math.round(quizScore/questions.length*100);r.innerHTML=`<div class="smallcaps" style="color:#aee9dc">KUIS SELESAI</div><h2 style="margin:6px 0">Kamu sudah berlatih! 🎉</h2><div class="quiz-score" style="color:#ffd166">${quizScore} dari ${questions.length} (${pct}%)</div><p>${pct===100?'Hebat! Kamu menjawab semua soal dengan tepat.':pct>=60?'Bagus! Ulangi bagian yang masih sulit agar makin siap.':'Tidak apa-apa. Yuk, pelajari lagi panduan dan coba kuis sekali lagi.'}</p><button class="btn yellow" onclick="restartQuiz()">Ulangi kuis ↻</button> <button class="btn light" onclick="showSection('panduan')">Pelajari langkah</button>`;document.getElementById('quiz-progress').style.width='100%'}}
+function restartQuiz(){quizIndex=0;quizScore=0;quizAnswered=0;quizDone=false;renderQuestion()}
+renderStep();renderBody();renderScenario();renderQuestion();
+</script>
+</body>
+</html>
